@@ -10,6 +10,7 @@ export default class Tablero extends Component {
 
     render(){
         return(
+        <div>    
             <div className="border-row">
                 {this.renderCuadrado(0)}
                 {this.renderCuadrado(1)}
@@ -25,6 +26,7 @@ export default class Tablero extends Component {
                 {this.renderCuadrado(7)}
                 {this.renderCuadrado(8)}
             </div>
+        </div>
 
         )
     }
