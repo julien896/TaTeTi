@@ -8,7 +8,7 @@ export default class Juego extends Component {
             xIsNext:true,
             stepNumber:0,
             history : [
-                {cuadrados: array(9).fill(null) }
+                {cuadrados: Array(9).fill(null) }
 
             ]
         }
@@ -54,8 +54,8 @@ jumpTo(step){
             )
         });
         let status;
-        if(winner){
-            status='El ganador es '+ winner;
+        if(ganador){
+            status='El ganador es '+ ganador;
         }else{
             status= 'El proximo jugador es ' +(this.state.xIsNext?'X':'O');
         }
